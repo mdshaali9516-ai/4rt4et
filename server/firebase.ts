@@ -30,8 +30,18 @@ if (process.env.FIREBASE_CONFIG) {
     projectId: process.env.FIREBASE_PROJECT_ID,
     apiKey: process.env.FIREBASE_API_KEY,
     authDomain: process.env.FIREBASE_AUTH_DOMAIN || `${process.env.FIREBASE_PROJECT_ID}.firebaseapp.com`,
-    storageBucket: process.env.FIREBASE_STORAGE_BUCKET || `${process.env.FIREBASE_PROJECT_ID}.appspot.com`,
-    firestoreDatabaseId: process.env.FIREBASE_DATABASE_ID || '(default)'
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET || `${process.env.FIREBASE_PROJECT_ID}.firebasestorage.app`,
+    firestoreDatabaseId: process.env.FIREBASE_DATABASE_ID || 'ai-studio-tawzoonnexus-557a2c6c-f5c5-48eb-9872-f80349e14033'
+  };
+} else {
+  firebaseConfig = {
+    projectId: "steady-dryad-6vxch",
+    appId: "1:122861861884:web:c13ddbd453c965860c1079",
+    apiKey: "AIzaSyADvDq0gUPIc5DtGtTyhRToqDGSv7Ry2vU",
+    authDomain: "steady-dryad-6vxch.firebaseapp.com",
+    firestoreDatabaseId: "ai-studio-tawzoonnexus-557a2c6c-f5c5-48eb-9872-f80349e14033",
+    storageBucket: "steady-dryad-6vxch.firebasestorage.app",
+    messagingSenderId: "122861861884"
   };
 }
 
